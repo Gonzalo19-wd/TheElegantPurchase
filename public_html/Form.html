@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Formulario1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css"/>
+    </head>
+    <body class="formulario">
+        <header>
+            <div class="encabezado">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="IMAGENES/index/Logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="Mujer.html">Mujer</a></li>
+                        <li><a href="Hombre.html">Hombre</a></li>
+                        <li><a href="Sport.html">Sport</a></li>
+                        <li><a href="Disfraces.html">Disfraces</a></li>
+                        <li><a href="Descuentos.html">Descuentos</a></li>
+                        <li class="busqueda">
+                            <input type="text" placeholder="Buscar ropa y otros productos">
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="icons">
+                    <span>Login</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <h2>Libro de Reclamaciones</h2>
+                <p class="subtitulo">
+                    Complete el siguiente formulario para registrar su reclamo o queja.
+                </p>
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" placeholder="Ingrese sus apellidos" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha del Reclamo</label>
+                    <input type="date" id="fecha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Detalle del Reclamo</label>
+                    <textarea
+                        id="mensaje"
+                        rows="5"
+                        maxlength="300"
+                        placeholder="Describa brevemente su reclamo (máximo 300 caracteres)"
+                        required></textarea>
+                </div>
+
+                <button type="submit">Enviar Reclamo</button>
+            </form>
+        </main>
+
+    </body>
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+<html>
+    <head>
+        <title>Carrito</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css"/>
+    </head>
+    <body>
+
+        <header>
+            <div class="encabezado">
+                <div class="logo"><a href="index.html"><img src="IMAGENES/index/Logo.png"/></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="Mujer.html">Mujer</a></li>
+                        <li><a href="Hombre.html">Hombre</a></li>
+                        <li><a href="Sport.html">Sport</a></li>
+                        <li><a href="Disfraces.html">Disfraces</a></li>
+                        <li><a href="Descuentos.html">Descuentos</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <span class="buscar-icono" onclick="abrirBusqueda()">🔍</span>
+                    <span>login</span>
+                    <a href="carrito.html" class="carrito">
+                        🛒 <b id="contador">0</b>
+                    </a>
+                </div>
+            </div>
+            <div class="buscador-panel" id="buscador">
+                <input type="text" id="buscarProducto" placeholder="Buscar ropa y otros productos">
+                <button onclick="buscar()">🔍</button>
+                <span class="cerrar-busqueda" onclick="cerrarBusqueda()">✕</span>
+            </div>
+        </header>
+
+        <main class="contenedorCarrito">
+
+            <h1>Mi Carrito</h1>
+
+            <table class="tablaCarrito">
+
+                <thead>
+
+                    <tr>
+                        <th>N°</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Eliminar</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="listaProductos">
+
+                </tbody>
+
+            </table>
+
+            <div class="resumenCarrito">
+                <h2>Subtotal: <span id="subtotal">S/ 0.00</span></h2>
+                <h2>Total: <span id="total">S/ 15.00</span></h2>
+                <button class="botonPago" onclick="window.location.href = 'Pago.html'">
+                    Finalizar Compra
+                </button>
+            </div>
+        </main>
+        <script src="JS/index.js"></script>
+    </body>
+    
+</html>

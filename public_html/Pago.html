@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Pago</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <div class="logo"><a href="index.html"><img src="IMAGENES/index/Logo.png"/></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="Mujer.html">Mujer</a></li>
+                        <li><a href="Hombre.html">Hombre</a></li>
+                        <li><a href="Sport.html">Sport</a></li>
+                        <li><a href="Disfraces.html">Disfraces</a></li>
+                        <li><a href="Descuentos.html">Descuentos</a></li>
+                    </ul>
+                </nav>
+                <div class="icons"> 
+                    <span class="buscar-icono" onclick="abrirBusqueda()">🔍</span>
+                    <span>login</span>
+                    <a href="carrito.html" class="carrito">
+                        🛒 <b id="contador">0</b>
+                    </a>
+                </div>
+            </div>
+            <div class="buscador-panel" id="buscador">
+                <input type="text" id="buscarProducto" placeholder="Buscar ropa y otros productos">
+                <button onclick="buscar()">🔍</button>
+                <span class="cerrar-busqueda" onclick="cerrarBusqueda()">✕</span>
+            </div>
+        </header>
+        <main class="ContenedorPago">
+            <div class="datosCliente">
+                <h2>Datos del cliente</h2>
+
+                <label>Nombre</label>
+                <input type="text" id="nombre"> 
+                <label>Apellido</label>
+                <input type="text" id="apellido">
+                <label>Correo Electrónico</label>
+                <input type="email" id="correo">
+                <label>Celular</label>
+                <input type="tel" id="telefono">
+
+                <h2>Dirección de Envío</h2>
+
+                <label>Departamento</label>
+                <input type="text" id="departamento">
+                <label>Provincia</label>
+                <input type="text" id="provincia">
+                <label>Distrito</label>
+                <input type="text" id="distrito">
+                <label>Dirección</label>
+                <input type="text" id="direccion">
+                <label>Referencia</label>
+                <textarea id="referencia"></textarea>
+                
+                <h2>Método de Pago</h2>
+                <div class="metodoPago">
+                    <label>
+                        <input type="radio" name="pago" value="Tarjeta">
+                        Tarjeta
+                    </label>
+                    <label>
+                        <input type="radio" name="pago" value="Yape">
+                        Yape
+                    </label>
+                    <label>
+                        <input type="radio" name="pago" value="Plin">
+                        Plin
+                    </label>
+                </div>
+            </div>
+            <div class="resumen">
+                <h2>Resumen de la compra</h2>
+                <table id="tablacarrito" border="1">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaProductos">
+                        
+                    </tbody>
+                </table>
+                <p>Subtotal: <span id="subtotal">S/ 0.00</span></p>
+                <p>Envio: <span >S/ 15.00</span>
+                <h3>Total: <span id="total">S/ 15.00</span></h3>
+            </div>
+        </main>
+        <script src="JS/index.js"></script>
+    </body>
+</html>

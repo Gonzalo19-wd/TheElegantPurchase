@@ -1,0 +1,82 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css"/>
+    </head>
+    <header>
+        <div class="encabezado">
+            <div class="logo"><a href="index.html"><img src="IMAGENES/index/Logo.png"/></a></div>
+            <nav>
+                <ul>
+                    <li><a href="Mujer.html">Mujer</a></li>
+                    <li><a href="Hombre.html">Hombre</a></li>
+                    <li><a href="Sport.html">Sport</a></li>
+                    <li><a href="Disfraces.html">Disfraces</a></li>
+                    <li><a href="Descuentos.html">Descuentos</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <span class="buscar-icono" onclick="abrirBusqueda()">🔍</span>
+                <span>login</span>
+                <a href="carrito.html" class="carrito">
+                    🛒 <b id="contador">0</b>
+                </a>
+            </div>
+        </div>
+        <div class="buscador-panel" id="buscador">
+            <input type="text" id="buscarProducto" placeholder="Buscar ropa y otros productos">
+            <button onclick="buscar()">🔍</button>
+            <span class="cerrar-busqueda" onclick="cerrarBusqueda()">✕</span>
+        </div>
+    </header>
+    <main></main>
+    <body class="tallas">
+        <div class="contenedor">
+            <h1>Guía de Tallas</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Talla</th>
+                        <th>Pecho (cm)</th>
+                        <th>Cintura (cm)</th>
+                        <th>Cadera (cm)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>S</td>
+                        <td>86 - 91</td>
+                        <td>71 - 76</td>
+                        <td>86 - 91</td>
+                    </tr>
+
+                    <tr>
+                        <td>M</td>
+                        <td>92 - 97</td>
+                        <td>77 - 82</td>
+                        <td>92 - 97</td>
+                    </tr>
+
+                    <tr>
+                        <td>L</td>
+                        <td>98 - 103</td>
+                        <td>83 - 88</td>
+                        <td>98 - 103</td>
+                    </tr>
+
+                    <tr>
+                        <td>XL</td>
+                        <td>104 - 109</td>
+                        <td>89 - 94</td>
+                        <td>104 - 109</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

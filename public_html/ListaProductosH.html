@@ -1,0 +1,426 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Productos_Masculinos</title>
+        <link rel="stylesheet" href="CSS/index.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <div class="logo"><a href="index.html"><img src="IMAGENES/index/Logo.png"/></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="Mujer.html">Mujer</a></li>
+                        <li class="actual"><a href="Hombre.html">Hombre</a></li>
+                        <li><a href="Sport.html">Sport</a></li>
+                        <li><a href="Disfraces.html">Disfraces</a></li>
+                        <li><a href="Descuentos.html">Descuentos</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <div class="icons">
+                    <span class="buscar-icono" onclick="abrirBusqueda()">🔍</span>
+                    <span>login</span>
+                    <a href="carrito.html" class="carrito">
+                        🛒 <b id="contador">0</b>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="buscador-panel" id="buscador">
+                <input type="text" id="buscarProducto" placeholder="Buscar ropa y otros productos">
+                <button onclick="buscar()">🔍</button>
+                <span class="cerrar-busqueda" onclick="cerrarBusqueda()">✕</span>
+            </div>
+            <div class="columna2_head">
+                <ul>
+                    <li>
+                        Coleccion
+                        <ul>
+                            <li>
+                                <a href="ListaProductosH.html#Camisas">
+                                    Camisas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ListaProductosH.html#Pantalones">
+                                    Pantalones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ListaProductosH.html#Sacos">
+                                    Sacos
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Calzado
+                        <ul>
+                            <li>
+                                <a href="ListaProductosH.html#Zapatos">
+                                    Zapatos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ListaProductosH.html#Zapatillas">
+                                    Zapatillas
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Accesorios
+                        <ul>
+                            <li>
+                                <a href="ListaProductosH.html#Relojes">
+                                    Relojes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ListaProductosH.html#Collares">
+                                    Collares
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="galeria">
+            <div class="novedades">
+                <div>
+                    <h2 id="Camisas">Camisas</h2>
+                    <div class="exibicionLista">
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/camisa1.jpg">
+                            <span class="descripcion">Camisa Cuadros Azul Marino Slim Fit<br>S/ 129.90</span>
+                            <button onclick="agregarCarrito('Camisa Cuadros Azul Marino Slim Fit', 129.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/camisa2.jpg">
+                            <span class="descripcion">Camisa Cuadros Beige Clasica Manga Larga<br>S/ 139.90</span>
+                            <button onclick="agregarCarrito('Camisa Cuadros Beige Clasica Manga Larga', 139.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/camisa3.jpg">
+                            <span class="descripcion">Camisa Overshirt Negra Casual<br>S/ 159.90</span>
+                            <button onclick="agregarCarrito('Camisa Overshirt Negra Casual', 159.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/camisa4.jpg">
+                            <span class="descripcion">Camisa Celeste Rayada Premium<br>S/ 119.90</span>
+                            <button onclick="agregarCarrito('Camisa Celeste Rayada Premium', 119.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/camisa5.jpg">
+                            <span class="descripcion">Camisa Negra Manga Corta Elegance<br>S/ 109.90</span>
+                            <button onclick="agregarCarrito('Camisa Negra Manga Corta Elegance', 109.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novedades">
+                <div>
+                    <h2 id="Pantalones">Pantalones</h2>
+                    <div class="exibicionLista">
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/pant1.jpg">
+                            <span class="descripcion">Pantalon de Vestir Azul Marino Slim Fit<br>S/ 249.90</span>
+                            <button onclick="agregarCarrito('Pantalon de Vestir Azul Marino Slim Fit', 249.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/pant2.jpg">
+                            <span class="descripcion">Pantalon de Lino Beige Relaxed Fit<br>S/ 199.90</span>
+                            <button onclick="agregarCarrito('Pantalon de Lino Beige Relaxed Fit', 199.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/pant3.jpg">
+                            <span class="descripcion">Pantalon de Lino Blanco Premium<br>S/ 229.90</span>
+                            <button onclick="agregarCarrito('Pantalon de Lino Blanco Premium', 229.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/pant4.jpg">
+                            <span class="descripcion">Pantalon de Vestir Negro Elegance<br>S/ 269.90</span>
+                            <button onclick="agregarCarrito('Pantalon de Vestir Negro Elegance', 269.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/pant5.jpg">
+                            <span class="descripcion">Pantalon Casual Blanco Algodón<br>S/ 169.90</span>
+                            <button onclick="agregarCarrito('Pantalon Casual Blanco Algodon', 169.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novedades">
+                <div>
+                    <h2 id="Sacos">Sacos</h2>
+                    <div class="exibicionLista">
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/saco1.jpg">
+                            <span class="descripcion">Saco Azul Marino Business Fit<br>S/ 299.90</span>
+                            <button onclick="agregarCarrito('Saco Azul Marino Business Fit', 299.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/saco2.jpg">
+                            <span class="descripcion">Saco Negro Clasico Executive<br>S/ 319.90</span>
+                            <button onclick="agregarCarrito('Saco Negro Clasico Executive', 319.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/saco3.jpg">
+                            <span class="descripcion">Saco Beige Premium Linen Blend<br>S/ 349.90</span>
+                            <button onclick="agregarCarrito('Saco Beige Premium Linen Blend', 349.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/saco4.jpg">
+                            <span class="descripcion">Saco Negro Casual Modern Fit<br>S/ 279.90</span>
+                            <button onclick="agregarCarrito('Saco Negro Casual Modern Fit', 279.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/saco5.jpg">
+                            <span class="descripcion">Saco Marron Elegance Tailored<br>S/ 329.90</span>
+                            <button onclick="agregarCarrito('Saco Marron Elegance Tailored', 329.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novedades">
+                <div>
+                    <h2 id="Zapatos">Zapatos</h2>
+                    <p>Paso Firme</p>
+                    <div class="exibicionLista">
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/zapato1.jpg">
+                            <span class="descripcion">Zapato Oxford Negro Closico de Cuero<br>S/ 269.90</span>
+                            <button onclick="agregarCarrito('Zapato Oxford Negro Clasico de Cuero', 269.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/zapato2.jpg">
+                            <span class="descripcion">Zapato Derby Marron Executive<br>S/ 249.90</span>
+                            <button onclick="agregarCarrito('Zapato Derby Marron Executive', 249.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/zapato3.jpg">
+                            <span class="descripcion">Zapato Oxford Marron Premium Leather<br>S/ 289.90</span>
+                            <button onclick="agregarCarrito('Zapato Oxford Marron Premium Leather', 289.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/zapato4.jpg">
+                            <span class="descripcion">Zapato Oxford Negro Business Fit<br>S/ 279.90</span>
+                            <button onclick="agregarCarrito('Zapato Oxford Negro Business Fit', 279.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/Hombre/zapato5.jpg">
+                            <span class="descripcion">Zapato Oxford Negro Elegance<br>S/ 299.90</span>
+                            <button onclick="agregarCarrito('Zapato Oxford Negro Elegance', 299.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novedades">
+                <div>
+                    <h2 id="Zapatillas">Zapatillas</h2>
+                    <div class="exibicionLista">
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Zapatillas/1.jpg">
+                            <span class="descripcion">Zapatilla Urbana Blanca con Franjas Verdes<br>S/ 199.90</span>
+                            <button onclick="agregarCarrito('Zapatilla Urbana Blanca con Franjas Verdes', 199.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Zapatillas/2.jpg">
+                            <span class="descripcion">Zapatilla Casual Blanca y Azul Marino Sport<br>S/ 219.90</span>
+                            <button onclick="agregarCarrito('Zapatilla Casual Blanca y Azul Marino Sport', 219.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Zapatillas/3.jpg">
+                            <span class="descripcion">Zapatilla Blanca Minimalista Comfort<br>S/ 189.90</span>
+                            <button onclick="agregarCarrito('Zapatilla Blanca Minimalista Comfort', 189.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Zapatillas/4.jpg">
+                            <span class="descripcion">Zapatilla Runner Blanca con Detalles Verdes<br>S/ 209.90</span>
+                            <button onclick="agregarCarrito('Zapatilla Runner Blanca con Detalles Verdes', 209.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Zapatillas/5.jpg">
+                            <span class="descripcion">Zapatilla Urbana Blanca con Franjas Azules<br>S/ 199.90</span>
+                            <button onclick="agregarCarrito('Zapatilla Urbana Blanca con Franjas Azules', 199.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novedades">
+                <div>
+                    <h2 id="Relojes">Relojes</h2>
+                    <div class="exibicionLista">
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Relojes/1.jpg">
+                            <span class="descripcion">Swatch Cronografo Deportivo Plateado<br>S/ 499.90</span>
+                            <button onclick="agregarCarrito('Swatch Cronografo Deportivo Plateado', 499.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Relojes/2.jpg">
+                            <span class="descripcion">Citizen Automatico Clasico Negro<br>S/ 699.90</span>
+                            <button onclick="agregarCarrito('Citizen Automatico Clasico Negro', 699.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Relojes/3.jpg">
+                            <span class="descripcion">Maserati Cronografo Azul Marino<br>S/ 899.90</span>
+                            <button onclick="agregarCarrito('Maserati Cronografo Azul Marino', 899.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Relojes/4.jpg">
+                            <span class="descripcion">Casio Minimalista Negro Elegante<br>S/ 159.90</span>
+                            <button onclick="agregarCarrito('Casio Minimalista Negro Elegante', 159.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Relojes/5.jpg">
+                            <span class="descripcion">Tommy Hilfiger Cronografo Negro<br>S/ 649.90</span>
+                            <button onclick="agregarCarrito('Tommy Hilfiger Cronografo Negro', 649.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novedades">
+                <div>
+                    <h2 id="Collares">Collares</h2>
+                    <div class="exibicionLista">
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Collares/1.jpg">
+                            <span class="descripcion">Collar Cruz Plateado Casual<br>S/ 89.90</span>
+                            <button onclick="agregarCarrito('Collar Cruz Plateado Casual', 89.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Collares/2.jpg">
+                            <span class="descripcion">Collar Piedra Azul Elegante<br>S/ 129.90</span>
+                            <button onclick="agregarCarrito('Collar Piedra Azul Elegante', 129.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Collares/3.jpg">
+                            <span class="descripcion">Collar Medalla Clásica Plateada<br>S/ 109.90</span>
+                            <button onclick="agregarCarrito('Collar Medalla Clasica Plateada', 109.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Collares/4.jpg">
+                            <span class="descripcion">Collar Diseño Moderno Plateado<br>S/ 149.90</span>
+                            <button onclick="agregarCarrito('Collar Diseno Moderno Plateado', 149.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="IMAGENES/HOMBRE/Collares/5.jpg">
+                            <span class="descripcion">Collar Barra Minimalista Plateada<br>S/ 99.90</span>
+                            <button onclick="agregarCarrito('Collar Barra Minimalista Plateada', 99.90)">
+                                <span class="texto">Agregar al carrito</span> <i class="compra">🛒</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div class="footer-col">
+                <h3>Atencion al cliente</h3>
+                <ul>
+                    <li><a href="link">Formas de pago</a></li>
+                    <li><a href="link">Cambios & Devoluciones</a></li>
+                    <li><a href="GuiaTallas.html">Guia de Tallas</a></li>
+                    <li><a href="link">Preguntas frecuentes (FAQ)</a></li>
+                    <li><a href="link">Contactanos</a></li>
+                    <li><a href="Ubicacion.html">Ubicanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="Blog.html" target="_blank">Quienes somos</a></li>
+                </ul>
+                <h3>Nuestras redes sociales</h3>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr#" target="_blank"><img src="IMAGENES/index/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="IMAGENES/index/instagram.png"></a>
+                    <a href="https://www.tiktok.com/" target="_blank"><img src="IMAGENES/index/tiktok.png"></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Libro de Reclamaciones</h3>
+                <p><a href="Form.html" target="_blank"><img src="IMAGENES/libro.png" width="100"/></a></p>
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 The Elegant Purchase - Peru
+            </div>
+        </footer>
+        <div id="toast">✔ Producto agregado al carrito</div>
+        <script src="JS/index.js"></script>
+    </body>
+</html>
